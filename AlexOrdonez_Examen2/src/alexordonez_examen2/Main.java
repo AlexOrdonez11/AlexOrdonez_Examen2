@@ -867,6 +867,7 @@ public class Main extends javax.swing.JFrame {
         DefaultTableModel model=(DefaultTableModel)jt_planetas.getModel();
         model.removeRow(row);
         jt_planetas.setModel(model);
+        Guardar();
     }//GEN-LAST:event_eliminarActionPerformed
 
     private void eliminar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar1ActionPerformed
@@ -874,6 +875,7 @@ public class Main extends javax.swing.JFrame {
         DefaultTableModel model=(DefaultTableModel)jt_astros.getModel();
         model.removeRow(rows);
         jt_astros.setModel(model);
+        Guardar();
     }//GEN-LAST:event_eliminar1ActionPerformed
 
     private void jt_astrosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jt_astrosMouseClicked
@@ -918,6 +920,7 @@ public class Main extends javax.swing.JFrame {
             model.addRow(o);
             jt_planetas.setModel(model);
         }
+        Guardar();
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void modificar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_modificar1MouseClicked
@@ -950,7 +953,7 @@ public class Main extends javax.swing.JFrame {
             model.addRow(o);
             jt_astros.setModel(model);
         }
-        
+        Guardar();
     }//GEN-LAST:event_modificar1ActionPerformed
 
     /**
